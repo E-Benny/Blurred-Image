@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blurred Image Text</title>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ body {
+  height: 100vh;
+  margin: 0;
+    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-text {
+background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-image {
+  background: url('https://images.unsplash.com/photo-1583860323818-976007787a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMTc1OTIxOA&ixlib=rb-1.2.1&q=80&w=400');
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}   
+</style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+      <h1>E-BENNY</h1>
+      <p>I am a software developer and digital designer. I aspire to develop mini-worlds which burst constant rushes of euphoria through live-chats</p>
+    </div> 
+</body>
+</html>
